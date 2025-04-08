@@ -55,3 +55,18 @@ void showBoard()
     cout << "\nPlayer " << player << "'s turn." << endl;  // Show whose turn it is
 }
 
+void resetBoard()
+{
+    cout << "resetBoard() called!" << endl;
+
+    for(int i = 0; i < 3; ++i)
+    {
+        for(int j = 0; j < 3; ++j)
+        {
+            board[i][j] = '_';
+        }
+    }
+    plays = 0;
+    player = 'X';
+    winner = '\0';
+}

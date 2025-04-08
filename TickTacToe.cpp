@@ -8,7 +8,7 @@ char player = 'X';
 int plays = 0;
 char winner;
 
-void init()
+void init() //initialized
 {
     // Initialize the board with blank spaces
     for(int i = 0; i < 3; i++)

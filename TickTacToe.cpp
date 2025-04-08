@@ -8,6 +8,13 @@ char player = 'X';
 int plays = 0;
 char winner;
 
+void welcomeMessage()
+{
+    cout << "============================\n";
+    cout << " Welcome to Tic-Tac-Toe!\n";
+    cout << "============================\n";
+}
+
 void init() //initialized
 {
     // Initialize the board with blank spaces
@@ -69,4 +76,13 @@ void resetBoard()
     plays = 0;
     player = 'X';
     winner = '\0';
+}
+
+int main()
+{
+    welcomeMessage();  // Call the new welcome message
+    init();
+    showBoard();
+    // Add your game loop or logic here
+    return 0;
 }

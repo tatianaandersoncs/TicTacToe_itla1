@@ -17,5 +17,4 @@ bool gameOver(); //implement this method
 
 
 
-
 #endif /* TICTACTOE_H_ */

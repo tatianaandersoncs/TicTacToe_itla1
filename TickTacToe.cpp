@@ -8,6 +8,24 @@ char player = 'X';
 int plays = 0;
 char winner;
 
+
+bool validation(int input){
+    if (input < 1 || input > 9){
+        cout << "Invalid value: Please enter int between 1-9" << endl;
+        return false;
+    }
+
+    int row = (input - 1) / 3;
+    int col = (input - 1) % 3;
+
+    if (board[row][col] != '_') {
+        cout << "Spot already taken. Try again.";
+        return false;
+    }
+    return true;
+}
+
+
 void init()
 {
     // Initialize the board with blank spaces
